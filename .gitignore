@@ -4,3 +4,14 @@
 *swp
 *.pdf
 *.zip
+*.out
+*.tar.gz
+*.tar.bz2
+*.obj
+*.pdb
+*.dep
+*.exe
+*.idb
+*.manifest
+*.ikl
+*.pch
