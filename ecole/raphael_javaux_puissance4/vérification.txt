@@ -1,0 +1,24 @@
+Raphael Javaux 2104
+
+Vérification des alignements
+____________________________
+
+Les alignements sont vérifiés par les fonctions NbAlignes et MaxAlignes.
+
+NbAlignes retourne le nombre de fois que le pion "tour" apparraît dans la
+direction indiquée par deltaX et par deltaY autour du pion donné par
+case_jouee.  La position en case_jouee n'est pas vérifiée, ce qui fait que la
+fonction retournera toujours au moins un. Cela permet également de compter le
+nombre de pions qui seront alignés si l'on prévoit de placer un pion à la
+positon case_jouee, sans pour autant l'enregistrer dans le tableau de jeu.  La
+fonction va se déplacer par deltaX et deltaY jusqu'à rencontrer un pion n'étant
+pas identique à tour en comptant le nombre de déplacement.  deltaX et deltaY
+seront ensuite mis à leurs valeurs opposées, le déplacement se fera donc dans
+le sens opposé. La fonction compte une nouvelle fois le nombre de pions
+correspondant à tour en partant de la position donnée par case_jouee.  Le
+nombre total de pions correspondant à tour est ensuite retourné.
+
+MaxAlignes utilise la fonction NbAlignes pour trouver le nombre maximal de
+pions alignés autour de case_jouee, horizontalement, verticalement et dans les
+deux diagonales (en modifiant deltaX et deltaY).  Si l'un des tests retourne
+l'alignement maximal (4), les autres tests ne sont pas effectués.
